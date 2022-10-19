@@ -162,18 +162,18 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    fill: var(--primary-text-color);
     text-decoration: none;
 }
 
 .contact-list .link:hover,
 .contact-list .link:focus {
     color: var(--accent-color);
-    fill: var(--accent-color);
 }
 
 .contact-list .icon {
     margin-right: 10px;
+
+    fill: currentColor;
 }
 
 /*--------Заголовок секції-----------------*/
@@ -360,19 +360,21 @@ img {
     width: 100%;
     height: 100%;
 
-    fill: var(--icon-bg-color);
+    color: var(--icon-bg-color);
     border-radius: 50%;
 }
 
 .member-icon-link:hover,
 .member-icon-link:focus {
     background-color: var(--accent-color);
-    fill: var(--primary-white-color);
+    color: var(--primary-white-color);
 }
 
 .member-icon {
     width: 20px;
     height: 20px;
+
+    fill: currentColor;
 }
 
 /*-----Клієнти -------------------*/
@@ -401,18 +403,20 @@ img {
     border-style: solid; 
     border-color: var(--icon-bg-color);
     border-radius: 4px;
-    fill: var(--icon-bg-color);
+    color: var(--icon-bg-color);
 }
 
 .client-link:hover,
 .client-link:focus {
-    fill: var(--accent-color);
+    color: var(--accent-color);
     border-color: var(--accent-color);
 }
 
 .client-icon {
     width: 106px;
     height: 60px;
+
+    fill: currentColor;
 }
 
 /*-------Портфоліо-----------*/
@@ -463,7 +467,14 @@ img {
     width: 370px;
 }
 
-.portfolio-item:hover {
+.portfolio-link {
+    display: block;
+
+    text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -503,6 +514,7 @@ img {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-address-block {
@@ -547,10 +559,6 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-social-block {
-    padding-top: 12px;
-}
-
 .social-block-title {
     margin-bottom: 20px;
 
@@ -584,17 +592,18 @@ img {
     height: 100%;
 
     background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--primary-white-color);
+    color: var(--primary-white-color);
     border-radius: 50%;
 }
 
 .social-icon-link:hover,
 .social-icon-link:focus {
     background-color: var(--accent-color);
-    fill: var(--primary-white-color);
 }
 
 .social-icon {
     width: 20px;
     height: 20px;
+
+    fill: currentColor;
 }
